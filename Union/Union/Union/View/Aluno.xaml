@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Union.View.Aluno">
+  <ContentPage.Content>
+    <StackLayout Padding="20">
+      <Label Text="Cadastrar" Font="30"/>
+      <Label Text="Nome: "/>
+      <Entry Text="{Binding Nome}" Placeholder="Nome" />
+      <Label Text="Telefone"/>
+      <Entry Text="{Binding Telefone}" Placeholder="Telefone"/>
+      <Label Text="Email"/>
+      <Entry Text="{Binding Email}" Placeholder="Email"/>
+      <Label Text="Senha"/>
+      <Entry Text="{Binding Senha}" Placeholder="Senha"/>
+
+
+
+
+
+      <ContentPage.Content>
+        <StackLayout Padding="30" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+          <StackLayout>
+            <Image Source="logounion.png"/>
+          </StackLayout>
+          <StackLayout>
+            <Entry Text="" Placeholder="Login" HorizontalOptions="FillAndExpand"/>
+          </StackLayout>
+          <StackLayout>
+            <Entry IsPassword="true" TextColor="Black" Text="" Placeholder="Senha" HorizontalOptions="FillAndExpand"/>
+          </StackLayout>
+          <StackLayout>
+            <Button Text="Entrar" TextColor="White" HorizontalOptions="Center"
+                  VerticalOptions="Center" BackgroundColor="Green"/>
+          </StackLayout>
+        </StackLayout>
+      </ContentPage.Content>
+      
+      
+      
+      
+
+      <Button Text="Gravar" Clicked="Gravar"/>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
